@@ -15,6 +15,11 @@ const routes = [
   { path: '/advance-salaries',     element:<PrivateRoute><AdvanceSalaryListPage/></PrivateRoute> },
   { path: '/advance-salaries/new', element:<PrivateRoute><AdvanceSalaryFormPage/></PrivateRoute> },
   { path: '/advance-salaries/:id', element:<PrivateRoute><AdvanceSalaryDetailPage/></PrivateRoute> },
+
+  // Department Routes
+  { path: '/departments',     element:<PrivateRoute><DepartmentListPage/></PrivateRoute> },
+  { path: '/departments/new', element:<PrivateRoute><DepartmentFormPage/></PrivateRoute> },
+  { path: '/departments/:id', element:<PrivateRoute><DepartmentDetailPage/></PrivateRoute> },
 ];
 
 export default routes;
