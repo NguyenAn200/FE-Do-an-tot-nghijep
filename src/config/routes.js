@@ -39,14 +39,21 @@ const routes = [
   { path: '/positions',     element:<PrivateRoute><PositionListPage/></PrivateRoute> },
   { path: '/positions/new', element:<PrivateRoute><PositionFormPage/></PrivateRoute> },
   { path: '/positions/:id', element:<PrivateRoute><PositionDetailPage/></PrivateRoute> },
+
   // Salary Routes
   { path: '/salaries',     element:<PrivateRoute><SalaryListPage/></PrivateRoute> },
   { path: '/salaries/new', element:<PrivateRoute><SalaryFormPage/></PrivateRoute> },
   { path: '/salaries/:id', element:<PrivateRoute><SalaryDetailPage/></PrivateRoute> },
+
   // Salary Detail Routes
   { path: '/salary-details',      element:<PrivateRoute><SalaryDetailListPage/></PrivateRoute> },
   { path: '/salary-details/new',  element:<PrivateRoute><SalaryDetailFormPage/></PrivateRoute> },
   { path: '/salary-details/:id',  element:<PrivateRoute><SalaryDetailPage/></PrivateRoute> },
+  
+  // User Routes
+  { path: '/users',       element:<PrivateRoute><UserListPage/></PrivateRoute> },
+  { path: '/users/new',   element:<PrivateRoute><UserFormPage/></PrivateRoute> },
+  { path: '/users/:id',   element:<PrivateRoute><UserDetailPage/></PrivateRoute> },
   
 ];
 
